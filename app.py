@@ -49,12 +49,12 @@ def main():
     Gender= st.number_input('Insert Gender Male:1 Female:0')
     Age = st.number_input('Insert a Age',18,60)
    
-    Gulcose = st.number_input("Insert Estimated Salary", "")
-    BP = st.number_input("Insert Estimated Salary", "")
-    SkinThickness = st.number_input("Insert Estimated Salary", "")
-    Insulin = st.number_input("Insert Estimated Salary", "")
-    BMI = st.number_input("Insert Estimated Salary", "")
-    PedigreeFunction = st.number_input("Insert Estimated Salary", "")
+    Gulcose = st.number_input("Insert Gulcose", "")
+    BP = st.number_input("Insert BP", "")
+    SkinThickness = st.number_input("Insert SkinThickness", "")
+    Insulin = st.number_input("Insert Insulin", "")
+    BMI = st.number_input("Insert BMI", "")
+    PedigreeFunction = st.number_input("Insert PedigreeFunction", "")
     resul=""
     if st.button("Predict"):
       result=predict_note_authentication(Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction)
