@@ -43,7 +43,7 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Item Purchase Prediction using Logistic Classification")
+    st.header("")
     
     #Gender1 = st.select_slider('Select a Gender Male:1 Female:0',options=['1', '0'])
     Gender= st.number_input('Insert Gender Male:1 Female:0')
