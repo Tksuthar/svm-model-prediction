@@ -52,7 +52,7 @@ def main():
     Gulcose = st.number_input("Insert Gulcose", 9, 40)
     BP = st.number_input("Insert BP", 9, 40)
     SkinThickness = st.number_input("Insert SkinThickness", 9, 40)
-    Insulin = st.number_input("Insert Insulin", "")
+    Insulin = st.number_input("Insert Insulin", 9, 50)
     BMI = st.number_input("Insert BMI", 9, 40)
     PedigreeFunction = st.number_input("Insert PedigreeFunction", 9, 40)
     resul=""
