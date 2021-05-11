@@ -21,7 +21,7 @@ X["Gender"] = labelencoder_X.fit_transform(X["Gender"])
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X = sc.fit_transform(X)
-def predict_note_authentication(Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction):
+def predict_disease(Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction):
   output= model.predict(sc.transform([[Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction]]))
   print("Patient don't have any disease:", output)
   if output==[1]:
@@ -57,7 +57,7 @@ def main():
     PedigreeFunction = st.number_input("Insert PedigreeFunction", 9, 40)
     resul=""
     if st.button("Predict"):
-      result=predict_note_authentication(Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction)
+      result=predict_disease(Age, Gender, Gulcose, BP, SkinThickness, Insulin, BMI, PedigreeFunction)
       st.success('Model has predicted {}'.format(result))
       
     if st.button("About"):
